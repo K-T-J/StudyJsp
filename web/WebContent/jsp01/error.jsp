@@ -9,9 +9,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
 	<h2>에러 페이지 입니다 !!!</h2>
 	<h2>공사중 !!!</h2>
-
 </body>
 </html>
