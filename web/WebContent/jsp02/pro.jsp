@@ -19,13 +19,15 @@
 	System.out.println( "pw >>> " + pw );
 	
 	String[] pet = request.getParameterValues("pet");
-	for( String i : pet ){
-		System.out.println( "pet >>> " + i );		
+	System.out.println( "pet >>> " + pet );
+	if( pet != null ){
+		for( String i : pet ){
+			System.out.println( "pet >>> " + i );		
+		}
 	}
 %>
 
 <body>
-
 	<table border="1">
 		<tr>
 			<td>id</td>
@@ -50,81 +52,16 @@
 				} %>/>호랑이
 			</td>
 		</tr>
-	
-		
-		
-		
-		
-			<!-- 넘어온 파라미터중에 강아지, 고양이, 호랑이 각각 있는것들의 체크박스는 
-				checked라는 속성을 주어 체크된 상태로 페이지가 뜨게 만들어보세요.  
-				
-				if(pet != null{
-				for(int i = 0; i< pet.length; i++{
-					if(pet[i].equals("dog"){
-						checked
-						}
-					}
-				}
-				
-				
-				-->
-		
-	
-	
 	</table>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<%-- <!-- 왼쪽 id는 변수 String id이다 -->
-	<h1>pro Page</h1>
-	id = <%= id+1 %><br />
-	pw = <%= pw %>
-	
-	
 	<%
-	
-	//#1. 배열 출력
-	if(pet != null){
-		for(int i = 0; i < pet.length; i++){ %>
-			<h4><%= pet[i] %></h4>
-		<%}//for
-	}//if
-	
-	//파라미터 이름 목록 출력
-	Enumeration parameterNames= request.getParameterNames();
-	while(parameterNames.hasMoreElements()){
-		String name = (String)parameterNames.nextElement();
-		out.println(name + " ");
-	}
-	 
-
---%>
-	
-	
-
-	
+		//파라미터 이름 목록 출력
+		Enumeration parameterNames= request.getParameterNames();
+		while(parameterNames.hasMoreElements()){
+			String name = (String)parameterNames.nextElement();
+			out.println("name >> " + name);//화면에 출력
+		}
+	%>
 
 
 
