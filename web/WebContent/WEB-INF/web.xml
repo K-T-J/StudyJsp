@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+
+
+
+<!--
+<servlet>
+	<servlet-name>mvc</servlet-name>
+	<servlet-class>web.jsp13.servlet.HelloController</servlet-class>
+</servlet>
+	 
+	
+<servlet-mapping>
+	<servlet-name>mvc</servlet-name>
+	<url-pattern>/hello.naver</url-pattern>
+</servlet-mapping>
+ -->
+
+
+<!-- loginForm용 --> 
+<!-- 
+<servlet>
+	<servlet-name>loginForm</servlet-name>
+	<servlet-class>web.jsp13.servlet.LoginController</servlet-class>
+</servlet>
+ 	
+<servlet-mapping>
+	<servlet-name>loginForm</servlet-name>
+	<url-pattern>/login.git</url-pattern>	
+</servlet-mapping>
+-->
+
+
+<!-- loginPro용 -->
+<!--
+<servlet>
+	<servlet-name>loginPro</servlet-name>
+	<servlet-class>web.jsp13.servlet.LoginProController</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>loginPro</servlet-name>
+	<url-pattern>/loginPro.git</url-pattern>
+</servlet-mapping>
+-->
+
+
+<!--  form, pro등 모든 요청이 하나의 컨트롤러로 들어갈수 있게 servlet mapping -->
+<!--
+<servlet>
+	<servlet-name>mvc</servlet-name>
+	<servlet-class>web.jsp14.mvc.MainController</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+	<servlet-name>mvc</servlet-name>
+	<url-pattern>*.git</url-pattern>
+</servlet-mapping>
+-->
+
+
+
+
+<!--  servlet life cycle -->
+<!-- 
+<servlet>
+	<servlet-name>hello</servlet-name>
+	<servlet-class>web.jsp14.mvc.HelloController2</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+	<servlet-name>hello</servlet-name>
+	<url-pattern>/hello.git</url-pattern>
+</servlet-mapping> -->
+
+
+<!-- EL Test -->
+<!-- 
+<servlet>
+	<servlet-name>eltest</servlet-name>
+	<servlet-class>web.jsp14.mvc.TestController</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>eltest</servlet-name>
+	<url-pattern>/test.do</url-pattern>
+</servlet-mapping>
+ -->
+
+<!-- JSTL test -->
+<!-- 
+<servlet>
+	<servlet-name>jstlTest</servlet-name>
+	<servlet-class> web.jsp14.mvc.TestController2</servlet-class>
+
+</servlet>
+<servlet-mapping>
+	<servlet-name>jstlTest</servlet-name>
+	<url-pattern>/jstl.do</url-pattern>
+</servlet-mapping>
+ -->
+
+
+
+
+
+<!-- MVC test -->
+<!-- 
+<servlet>
+	<servlet-name>MemberTest</servlet-name>
+	<servlet-class>web.jsp15.mvc.MemberTestController</servlet-class>
+	<init-param>
+		<param-name>propertiesPath</param-name>
+		<param-value>E:\KTJ\jsp\workspace\web\WebContent\WEB-INF\properties\memberTest.properties</param-value>
+	</init-param>
+	
+	
+</servlet>
+<servlet-mapping>
+	<servlet-name>MemberTest</servlet-name>
+	<url-pattern>*.git</url-pattern>
+</servlet-mapping>
+ -->
+ 
+ <!-- member -->
+<!--
+<servlet>
+	<servlet-name>member</servlet-name>
+	<servlet-class>web.jsp16.controller.MemberController</servlet-class>
+	<init-param>
+		<param-name>prop</param-name>
+		<param-value>E:\KTJ\jsp\workspace\web\WebContent\WEB-INF\properties\memeber.properties</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>member</servlet-name>
+	<url-pattern>*.hrd</url-pattern>
+</servlet-mapping>
+ -->
+<!-- board -->
+<!-- <servlet>
+	<servlet-name>board</servlet-name>
+	<servlet-class>web.jsp17.controller.BoardController</servlet-class>
+	<init-param>
+		<param-name>prop</param-name>
+		<param-value>E:\KTJ\jsp\workspace\web\WebContent\WEB-INF\properties\board.properties</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>board</servlet-name>
+	<url-pattern>*.hrd</url-pattern>
+</servlet-mapping> -->
+
+
+
+
+<servlet>
+	<servlet-name>board</servlet-name>
+	<servlet-class>web.jsp17.mb.MemberBoardController</servlet-class>
+	<init-param>
+		<param-name>prop</param-name>
+		<param-value>E:\KTJ\jsp\workspace\web\WebContent\WEB-INF\properties\memberBoard.properties</param-value>
+	</init-param>
+</servlet>
+<servlet-mapping>
+	<servlet-name>board</servlet-name>
+	<url-pattern>*.hrd</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+</web-app>
