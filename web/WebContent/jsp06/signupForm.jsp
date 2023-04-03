@@ -73,7 +73,6 @@
 					<input type="submit" value="signup"/>
 				</td>
 			</tr>
-
 		</table>
 	</form>
 
