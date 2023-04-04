@@ -8,10 +8,9 @@
 </head>
 <body>
 	<h3>작성자로 이미지 찾기</h3>
-	<form action = "imgResult.jsp" method="post">
-		작성자 : <input type ="text" name ="writer"/><br/>
-			<input type ="submit" value = "찾기"/>
-	
+	<form action="imgResult.jsp" method="post">
+		작성자 :<input type=text" name="writer"/><br/>
+				<input type="submit" value="찾기"/>
 	</form>
 
 
