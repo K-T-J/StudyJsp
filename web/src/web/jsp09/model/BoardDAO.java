@@ -56,8 +56,7 @@ public class BoardDAO {
 		try {
 			conn = getConnection();
 			/*
-			String sql = "select 
-							num,writer,subject,email,content,pw,reg,readcount,ref,re_step,re_level,r " 
+			String sql = "select num,writer,subject,email,content,pw,reg,readcount,ref,re_step,re_level,r " 
 			+ "from (select num,writer,subject,email,content,pw,reg,readcount,ref,re_step,re_level,rownum r " //정렬한거에 rownum을 추가해서 다시 정렬해주고
 			+ "from (select num,writer,subject,email,content,pw,reg,readcount,ref,re_step,re_level " //첫번쨰 정렬을하고
 			+ "from board order by ref desc, re_step asc) order by ref desc, re_step asc) where r >= ? and r <= ?"; //r 을 가지고 조건문을 건다
